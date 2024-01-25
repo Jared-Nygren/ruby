@@ -15,3 +15,20 @@
 # rand(1..6)
 # Log output to the screen with puts:
 # puts "Hello, world"
+
+# create a random number and store it in memory 
+random_number_1 = rand(1..6)
+
+# create a second random number and store it in memory
+random_number_2 = rand(1..6)
+
+# add two dice in memory togehter and store the total 
+random_sum = random_number_1 + random_number_2
+
+#write the first die to the screen in a user-friendly way 
+puts "first die: #{random_number_1}"
+
+# #write the second die to the screen in a user-friendly way 
+puts "second die: #{random_number_2}"
+
+# # total 

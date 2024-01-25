@@ -15,3 +15,21 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+# Create my list 
+me = ["milk", "eggs", "bacon"]
+# Create friend list 
+friend = ["beer", "cookies", "apples"]
+# combine into single list and store
+combined = me + friend
+# # sort alphabetically 
+sorted = combined.sort.uniq
+# # remove duplicates
+
+#write to screen
+puts sorted
+
+
+
+
+

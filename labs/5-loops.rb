@@ -6,8 +6,8 @@
 # Build a deck of cards. Given the following arrays, use a loop
 # (or two... hint, hint) to write out every combination to the
 # screen.
-ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
-suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
+#ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
+#suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 
 # Sample output:
 # 2 of Clubs
@@ -20,3 +20,33 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # CHALLENGE
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
+
+# Define the ranks and suits
+ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
+suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
+
+# Create an empty array to hold the deck
+deck = []
+
+# Build the deck of cards
+ranks.each do |rank|
+  suits.each do |suit|
+    deck.push("#{rank} of #{suit}")
+  end
+end
+
+# Output each card in the deck
+deck.each do |card|
+  puts card
+end
+
+# CHALLENGE
+# Shuffle the deck and deal a 5 card hand
+shuffled_deck = deck.shuffle
+poker_hand = shuffled_deck.first(5)
+
+# Display the 5 card poker hand
+puts "\nYour poker hand:"
+poker_hand.each do |card|
+  puts card
+end

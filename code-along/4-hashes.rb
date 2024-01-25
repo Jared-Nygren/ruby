@@ -7,3 +7,14 @@
 # Accessing data from the hash
 
 # More Complex Hashes
+
+my_profile ={
+    "name" => {
+        "first" => "Brian",
+        "last" => "jen",
+    },
+     "location" => "chicago",
+     "status" => "ENTR-451"
+    }
+
+puts my_profile["name"] ["last"]

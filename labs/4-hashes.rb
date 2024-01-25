@@ -29,4 +29,14 @@ bitcoin = gets.chomp
 bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+puts bitcoin_data
+
+puts "you have #{bitcoin} bitcoin."
+
+# dig through hash 
+current_price = bitcoin_data['bpi']['USD']['rate_float']
+
+total_value = bitcoin * current_price
+
+puts "1 Bitcoin is valued at $#{'%.2f' % current_price} USD."
+puts "Your Bitcoin is worth $#{'%.2f' % total_value}."
